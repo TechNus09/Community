@@ -7,6 +7,7 @@ import datetime
 from datetime import datetime
 import config
 from config import CHANNEL_ID
+from config import SERVER_ID
 
 
 class Recruit(interactions.Extension):
@@ -15,6 +16,7 @@ class Recruit(interactions.Extension):
         self.bot = client
         self.form_reg = {}
         self.channel_id = CHANNEL_ID
+        self.server_id = SERVER_ID
         return
     
 
@@ -102,7 +104,7 @@ class Recruit(interactions.Extension):
     @interactions.extension_command(
                 name="join_guild",
                 description="Fill a Recruitment Form And Send It To Guilds Leaders",
-                scope=839662151010353172
+                scope=SERVER_ID
                 )        
     async def join_guild(self,ctx:CC):
         await ctx.popup(self.set_form())
