@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+psycopg2 = "==2.9.3"
+discord-py-interactions = {editable = true, ref = "unstable", git = "https://github.com/interactions-py/library"}
+aiohttp = "==3.8.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
