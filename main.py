@@ -12,7 +12,7 @@ from config import TOKEN
 
 
 
-presence = it.PresenceActivity(name="Over CoA Community", type=it.PresenceActivityType.WATCHING)
+presence = it.PresenceActivity(name="Over CoA's Community", type=it.PresenceActivityType.WATCHING)
 bot = Client(token=TOKEN,presence=it.ClientPresence(activities=[presence]),disable_sync=False)
 
 
