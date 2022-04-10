@@ -111,7 +111,7 @@ class Recruit(interactions.Extension):
 
     @interactions.extension_modal("app_form")
     async def app_response(self,ctx:CPC,guild_tag,ign,reason,playrate):
-        print(dir(ctx)
+        print(dir(ctx))
         print("------")
         print("ctx._json")
         channel = it.Channel(**await self.bot._http.get_channel(self.channel_id), _client=self.bot._http)
