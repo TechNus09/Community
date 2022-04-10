@@ -13,15 +13,15 @@ class Recruit(interactions.Extension):
 
     def __init__(self,client : Client) -> None:
         self.bot = client
-        self.forum_reg = {}
+        self.form_reg = {}
         self.channel_id = CHANNEL_ID
         return
     
 
-    def set_forum(self):
-        forum_modal = Modal(
-        custom_id="app_forum",
-        title="Guild Recruitment Forum",
+    def set_form(self):
+        form_modal = Modal(
+        custom_id="app_form",
+        title="Guild Recruitment Form",
         components=[
                     TextInput(
                         style=TextStyleType.SHORT,
@@ -62,11 +62,11 @@ class Recruit(interactions.Extension):
                 ],
             )
 
-        return forum_modal
+        return form_modal
 
 
 
-    def get_forum(self,guild_tag:str,user:it.Member.user,ign:str,reason:str,play_rate:str):
+    def get_form(self,guild_tag:str,user:it.Member.user,ign:str,reason:str,play_rate:str):
         fields=[
                 it.EmbedField(  
                 name="1 - Which Guild You Are Applying to ?",
@@ -101,16 +101,16 @@ class Recruit(interactions.Extension):
 
     @interactions.extension_command(
                 name="join_guild",
-                description="Fill a Recruitment Forum And Send It To Guilds Leaders",
+                description="Fill a Recruitment Form And Send It To Guilds Leaders",
                 scope=839662151010353172
                 )        
     async def join_guild(self,ctx:CC):
-        await ctx.popup(self.set_forum())
+        await ctx.popup(self.set_form())
 
-    @interactions.extension_modal("app_forum")
+    @interactions.extension_modal("app_form")
     async def app_response(self,ctx:CPC,guild_tag,ign,reason,playrate):
         channel = it.Channel(**await self.bot._http.get_channel(self.channel_id), _client=self.bot._http)
-        app_embed = self.get_forum(str(guild_tag),ctx.user,str(ign),str(reason),str(playrate))
+        app_embed = self.get_form(str(guild_tag),ctx.user,str(ign),str(reason),str(playrate))
         await channel.send("application received",embeds=app_embed)
         await ctx.send("application submitted")
 
