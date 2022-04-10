@@ -89,7 +89,7 @@ class Recruit(interactions.Extension):
                 ]
         avatar_url = f"https://cdn.discordapp.com/avatars/{user.id}/{user.avatar}.png"
         app_embed = it.Embed(
-                            title=f"{guild_tag.upper()}' Guild Application",
+                            title=f"{guild_tag.upper()} Guild Application",
                             color=0x00ff00,
                             fields=fields,
                             timestamp=str(datetime.utcnow()),
