@@ -98,7 +98,7 @@ class Recruit(interactions.Extension):
                                                 icon_url=avatar_url,
                                                 )
                             )
-        app_embed.set_footer(f"Id : {user.id}")
+        #app_embed.set_footer(f"Id : {user.id}")
         return app_embed
 
     @interactions.extension_command(
