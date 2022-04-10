@@ -15,7 +15,7 @@ class Recruit(interactions.Extension):
     def __init__(self,client : Client) -> None:
         self.bot = client
         self.form_reg = {}
-        self.channel_id = CHANNEL_ID
+        self.channel_id = int(CHANNEL_ID)
         self.server_id = SERVER_ID
         return
     
@@ -111,6 +111,9 @@ class Recruit(interactions.Extension):
 
     @interactions.extension_modal("app_form")
     async def app_response(self,ctx:CPC,guild_tag,ign,reason,playrate):
+        print(dir(ctx)
+        print("------")
+        print("ctx._json")
         channel = it.Channel(**await self.bot._http.get_channel(self.channel_id), _client=self.bot._http)
         app_embed = self.get_form(str(guild_tag),ctx.user,str(ign),str(reason),str(playrate))
         await channel.send("application received",embeds=app_embed)
