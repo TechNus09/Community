@@ -104,7 +104,7 @@ class Recruit(interactions.Extension):
     @interactions.extension_command(
                 name="join_guild",
                 description="Fill a Recruitment Form And Send It To Guilds Leaders",
-                scope=SERVER_ID
+                scope=int(SERVER_ID)
                 )        
     async def join_guild(self,ctx:CC):
         await ctx.popup(self.set_form())
