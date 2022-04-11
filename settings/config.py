@@ -9,7 +9,7 @@ SERVER_ID = os.getenv("SERVER_ID")
 TOKEN = os.getenv("TOKEN")
 
 """guilds applications' bodies"""
-roles_id =  {
+roles_id =  {"Default": 999999999999999999,
             "OwO": 962617518156029952,
             "PHG": 962617427055738960,
             "LAT": 962617556378722335,
