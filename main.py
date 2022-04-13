@@ -7,7 +7,6 @@ import datetime
 
 import time
 import math
-#import config
 from settings.config import TOKEN
 
 import logging
@@ -16,7 +15,7 @@ import logging
 
 presence = it.PresenceActivity(name="Over CoA's Community", type=it.PresenceActivityType.WATCHING)
 bot = Client(token=TOKEN,presence=it.ClientPresence(activities=[presence]),disable_sync=False)
-logging.basicConfig(level=logging.CRITICAL)
+logging.basicConfig(level=logging.DEBUG)
 
 @bot.event
 async def on_ready():
