@@ -153,7 +153,7 @@ app_body={
                 "guild_icon":"emoji_code"
                     },
         "TGR":{
-                "leader_role":roles_id["TRG"],
+                "leader_role":roles_id["TGR"],
                 "questions":[
                             "What's your ingame name?",
                             "How long have you played MMO's?",
