@@ -138,15 +138,15 @@ app_body={
                                 ],
                 "answers_length":[
                                 [3 ,14 ],
-                                [20,1000],
-                                [2,1000],
-                                [3,1000],
-                                [3,1000]
+                                [20 ,1000 ],
+                                [2 ,1000 ],
+                                [3 ,1000 ],
+                                [3 ,1000 ]
                                 ],
                 "asnwers_placeholders":[
                                         "Answer here ...",
                                         "Answer here ...",
-                                        "(Yes [guild name] | No)"
+                                        "(Yes [guild name] | No)",
                                         "Answer here ...",
                                         "Answer here ..."
                                        ],
@@ -156,7 +156,7 @@ app_body={
                 "leader_role":roles_id["TGR"],
                 "questions":[
                             "What's your ingame name?",
-                            "How long have you played MMO's?",
+                            "How long have you p_layed MMO's?",
                             "How long have you played CoA?",
                             "Why do you want to join TGR?",
                             "How can we help?"
