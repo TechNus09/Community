@@ -17,7 +17,8 @@ roles_id =  {"Default": 999999999999999999,
             "MR": 962617593305391145,
             "NX": 962617640445161472,
             "TWH": 962617672279941171,
-            "AoE": 962617708904591410
+            "AoE": 962617708904591410,
+            "TGR": 963843439148032000
             }
 
 guilds_list=[
@@ -28,7 +29,8 @@ guilds_list=[
             "MR",
             "NX",
             "TWH",
-            "AoE"
+            "AoE",
+            "TGR"
             ]
 app_body={
         "Default":{
@@ -118,4 +120,69 @@ app_body={
                                         "Explain here ..."],
                 "guild_icon":"emoji_code"
                 },
+        "AoE":{
+                "leader_role":roles_id["AoE"],
+                "questions":[
+                            "What's your ingame name?",
+                            "What are your combat/skills levels?",
+                            "Were you in a guild previously?(if yes:name)",
+                            "How long have you played CoA?",
+                            "Are you active in both CoA and discord?"
+                            ],
+                "questions_tags":[
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                                ],
+                "answers_length":[
+                                [3 ,14 ],
+                                [20,1000],
+                                [2,1000],
+                                [3,1000]
+                                [3,1000]
+                                ],
+                "asnwers_placeholders":[
+                                        "Answer here ...",
+                                        "Answer here ...",
+                                        "(Yes [guild name] | No)"
+                                        "Answer here ...",
+                                        "Answer here ..."
+                                       ],
+                "guild_icon":"emoji_code"
+                    },
+        "TGR":{
+                "leader_role":roles_id["TRG"],
+                "questions":[
+                            "What's your ingame name?",
+                            "How long have you played MMO's?",
+                            "How long have you played CoA?",
+                            "Why do you want to join TGR?",
+                            "How can we help?"
+                            ],
+                "questions_tags":[
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                                ],
+                "answers_length":[
+                                [3,14],
+                                [3,1000],
+                                [3,1000],
+                                [3,2000],
+                                [3,2000]
+                                ]
+                "asnwers_placeholders":[
+                                        "Answer here ...",
+                                        "Answer here ...",
+                                        "Answer here ...",
+                                        "Explain here ...",
+                                        "Explain here ..."
+                                        ],
+                "guild_icon":"emoji_code"
+                }
+        
         }
