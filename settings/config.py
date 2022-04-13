@@ -156,7 +156,7 @@ app_body={
                 "leader_role":roles_id["TGR"],
                 "questions":[
                             "What's your ingame name?",
-                            "How long have you p_layed MMO's?",
+                            "How long have you played MMO's?",
                             "How long have you played CoA?",
                             "Why do you want to join TGR?",
                             "How can we help?"
