@@ -18,7 +18,8 @@ roles_id =  {"Default": 999999999999999999,
             "NX": 962617640445161472,
             "TWH": 962617672279941171,
             "AoE": 962617708904591410,
-            "TGR": 963843439148032000
+            "TGR": 963843439148032000,
+            "NSFW": 968889873593434192
             }
 
 guilds_list=[
@@ -30,7 +31,8 @@ guilds_list=[
             "NX",
             "TWH",
             "AoE",
-            "TGR"
+            "TGR",
+            "NSFW"
             ]
 app_body={
         "Default":{
@@ -183,6 +185,37 @@ app_body={
                                         "Explain here ..."
                                         ],
                 "guild_icon":"emoji_code"
+                },
+        "NSFW":{
+                "leader_role":roles_id["NSFW"],
+                "questions":[
+                             "what's your IGN and Lvls?",
+                             "How old are you?",
+                             "Why are you applying to NSFW?",
+                             "Where did you hear of us?",
+                             "What timezone/country are you in?"
+                            ],
+                "questions_tags":[
+                                  "",
+                                  "",
+                                  "",
+                                  "",
+                                  ""
+                                 ],
+                "answers_length":[
+                                  [3 ,500 ],
+                                  [3 ,500 ],
+                                  [3 ,2000 ],
+                                  [3 ,1000 ],
+                                  [3 ,1000 ]
+                                 ],
+                "asnwers_placeholders":[
+                                        "Ingame-name || Levels",
+                                        "Answer here ...",
+                                        "Explain here ...",
+                                        "Answer here ...",
+                                        "Answer here ..."
+                                       ],
+                "guild_icon":"emoji_code"
                 }
-        
         }
