@@ -16,10 +16,10 @@ roles_id =  {"Default": 999999999999999999,
             "FALL": 962617490985328690,
             "MR": 962617593305391145,
             "NX": 962617640445161472,
-            "TWH": 962617672279941171,
             "AoE": 962617708904591410,
             "TGR": 963843439148032000,
-            "NSFW": 968889873593434192
+            "NSFW": 968889873593434192,
+            "RD": 969109162871119942
             }
 
 guilds_list=[
@@ -29,10 +29,10 @@ guilds_list=[
             "FALL",
             "MR",
             "NX",
-            "TWH",
             "AoE",
             "TGR",
-            "NSFW"
+            "NSFW",
+            "RD"
             ]
 app_body={
         "Default":{
@@ -41,7 +41,7 @@ app_body={
                                 "What is your ingame-name",
                                 "Why do you want to join",#+guild tag+" ?"
                                 "How often do you play Curse of Aros?"
-                                    ],
+                                ],
                     "questions_tags":[
                                 "",
                                 "",
@@ -151,7 +151,7 @@ app_body={
                                         "(Yes [guild name] | No)",
                                         "Answer here ...",
                                         "Answer here ..."
-                                       ],
+                                        ],
                 "guild_icon":"emoji_code"
                     },
         "TGR":{
@@ -189,33 +189,61 @@ app_body={
         "NSFW":{
                 "leader_role":roles_id["NSFW"],
                 "questions":[
-                             "what's your IGN and Lvls?",
-                             "How old are you?",
-                             "Why are you applying to NSFW?",
-                             "Where did you hear of us?",
-                             "What timezone/country are you in?"
+                            "what's your IGN and Lvls?",
+                            "How old are you?",
+                            "Why are you applying to NSFW?",
+                            "Where did you hear of us?",
+                            "What timezone/country are you in?"
                             ],
                 "questions_tags":[
-                                  "",
-                                  "",
-                                  "",
-                                  "",
-                                  ""
-                                 ],
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                                ],
                 "answers_length":[
-                                  [3 ,500 ],
-                                  [3 ,500 ],
-                                  [3 ,2000 ],
-                                  [3 ,1000 ],
-                                  [3 ,1000 ]
-                                 ],
+                                [3 ,500 ],
+                                [3 ,500 ],
+                                [3 ,2000 ],
+                                [3 ,1000 ],
+                                [3 ,1000 ]
+                                ],
                 "asnwers_placeholders":[
                                         "Ingame-name || Levels",
                                         "Answer here ...",
                                         "Explain here ...",
                                         "Answer here ...",
                                         "Answer here ..."
-                                       ],
+                                        ],
                 "guild_icon":"emoji_code"
-                }
+                },
+        "RD":{
+                    "leader_role":roles_id["Default"],
+                    "questions":[
+                                "What's your Ingame-name ?",
+                                "How often do you play CoA ?",
+                                "Why do you want to join RD ?",
+                                "How long have you been playing CoA ?"
+                                ],
+                    "questions_tags":[
+                                "",
+                                "",
+                                "",
+                                ""
+                                ],
+                    "answers_length":[
+                                    [3 ,14 ],
+                                    [3 ,1000 ],
+                                    [3 ,2000 ],
+                                    [2 ,1000 ]
+                                    ],
+                    "asnwers_placeholders":[
+                                            "Answer here ...",
+                                            "Answer here ...",
+                                            "Explain here ...",
+                                            "Answer here ..."
+                                            ],
+                    "guild_icon":"emoji_code"
+                    }
         }
