@@ -245,5 +245,37 @@ app_body={
                                             "Answer here ..."
                                             ],
                     "guild_icon":"emoji_code"
+                    },
+        "FALL":{
+                    "leader_role":roles_id["FALL"],
+                    "questions":[
+                                "How long have you been playing?",
+                                "We require active members,Can you be?",
+                                "Why did you choose to apply to FALL?",
+                                "Were you in a guild previously?(if yes:name)",
+                                "Boob is Good?"
+                                ],
+                    "questions_tags":[
+                                "",
+                                "",
+                                "",
+                                "",
+                                ""
+                                ],
+                    "answers_length":[
+                                    [3 ,1000 ],
+                                    [3 ,1000 ],
+                                    [3 ,2000 ],
+                                    [3 ,1000 ],
+                                    [2 ,1000 ]
+                                    ],
+                    "asnwers_placeholders":[
+                                            "Answer here ...",
+                                            "Answer here ...",
+                                            "Explain here ...",
+                                            "Answer here ...",
+                                            "Answer here ..."
+                                            ],
+                    "guild_icon":"emoji_code"
                     }
         }
